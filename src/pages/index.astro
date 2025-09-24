@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/layout.astro';
+import HeaderComponent from '../components/HeaderComponent.jsx';
+---
+<Layout>
+  <section class=" bg-[url(/city.png)] bg-no-repeat bg-cover bg-center bg-black/25 bg-blend-multiply text-white w-full h-screen flex flex-col p-0">
+    <div class="">
+      <div>
+        <img class="absolute w-auto h-20 top-2.5 left-2.5 z-0" src="/logo.png" alt="Logo">
+      </div>
+      <div><HeaderComponent client:load /></div>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center h-auto absolute top-1/2 -translate-y-1/2 z-0">
+      <h1 class="text-7xl font-bold">NOMBRE DEL JUEGO</h1>
+      <p class="text-[14px] font-light">Descripción del juego</p>
+    </div>
+  </section>
+  <section class="bg-[url(/fondo1.png)] bg-no-repeat bg-cover bg-center text-white w-full h-screen flex flex-col p-0"></section>
+</Layout>

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --base-bg-color: #212121;
+  --secondary-bg-color: #d9d9d9;
+  --secondary-bg-opacity-color: rgba(217, 217, 217, 0.75);
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+}
+
+@layer utilities {
+  /* Scrollbar global */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 9999px;
+    border: 2px solid #1a1a1a;
+  }
+
+  /* Opcional: hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-sans; /* mantiene la utilidad de Tailwind */
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.nav_links {
+  @apply hover:scale-115 hover:-translate-y-1 transition-transform duration-300;
+}
+
+.footer_div {
+  @apply flex flex-col items-center pt-5 space-y-4;
+}
+
+.footer_tittle {
+  @apply text-white text-[20px] font-bold mb-3;
+}
+
+.footer_link {
+  @apply text-gray-400 cursor-pointer text-[14px] font-light hover:text-white hover:translate-x-1.5 transition duration-300;
+}
+
+.footer_img {
+  @apply w-auto h-10 hover:scale-110 transition-transform duration-300 mt-1;
+}
