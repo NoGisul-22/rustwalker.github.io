@@ -15,16 +15,16 @@ const HeaderComponent = () => {
           <nav className="w-full flex justify-between items-center px-8">
             <ul className="flex justify-between w-full pl-40 pr-40 space-x-4 text-2xl font-bold">
               <li className="nav_links">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li className="nav_links">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="nav_links">
-                <a href="#">Technologies</a>
+                <a href="#tech">Technologies</a>
               </li>
               <li className="nav_links">
-                <a href="#">Download</a>
+                <a href="#download">Download</a>
               </li>
             </ul>
           </nav>

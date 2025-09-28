@@ -33,6 +33,18 @@
 
 html {
   @apply scroll-smooth;
+  cursor:
+    url("/cursor/pixel.png") 0 0,
+    auto;
+}
+
+a,
+button,
+.cursor-pointer {
+  /* Cursor pointer */
+  cursor:
+    url("/cursor/pixel-link.png") 0 0,
+    pointer;
 }
 
 body {
@@ -53,7 +65,7 @@ body {
 }
 
 .footer_link {
-  @apply text-gray-400 cursor-pointer text-[14px] font-light hover:text-white hover:translate-x-1.5 transition duration-300;
+  @apply text-gray-400 text-[14px] font-light hover:text-white hover:translate-x-1.5 transition duration-300;
 }
 
 .footer_img {

@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterComponent = () => {
   return (
-    <footer className="w-full h-[350px] p-4 bg-[#212121] text-white flex">
+    <footer className="w-full h-[250px] p-4 bg-[url(/fondo_light.png)] bg-no-repeat bg-cover bg-center text-white flex">
       <div className="w-[30%] flex items-center justify-start pl-10">
         <img
           className="h-[200px] w-auto object-contain"
@@ -13,20 +13,36 @@ const FooterComponent = () => {
       <div className="w-[70%] grid grid-cols-4 gap-2 text-lg font-bold">
         <div className="footer_div">
           <p className="footer_tittle">ATTENTION</p>
-          <p className="footer_link">Report a bug</p>
-          <p className="footer_link">Request a feature</p>
-          <p className="footer_link">Contact support</p>
+          <a href="#" className="footer_link">
+            Report a bug
+          </a>
+          <a href="#" className="footer_link">
+            Request a feature
+          </a>
+          <a href="#" className="footer_link">
+            Contact support
+          </a>
         </div>
         <div className="footer_div">
           <p className="footer_tittle">MODS</p>
-          <p className="footer_link">About mods</p>
+          <a href="#" className="footer_link">
+            About mods
+          </a>
         </div>
         <div className="footer_div">
           <p className="footer_tittle">LINKS</p>
-          <p className="footer_link">Home</p>
-          <p className="footer_link">About</p>
-          <p className="footer_link">Technologies</p>
-          <p className="footer_link">Download</p>
+          <a href="#home" className="footer_link">
+            Home
+          </a>
+          <a href="#about" className="footer_link">
+            About
+          </a>
+          <a href="#tech" className="footer_link">
+            Technologies
+          </a>
+          <a href="#download" className="footer_link">
+            Download
+          </a>
         </div>
         <div className="footer_div">
           <p className="footer_tittle">SOCIAL</p>
