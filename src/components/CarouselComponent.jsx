@@ -3,9 +3,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 
 const slides = [
-  { src: "/city.png", alt: "Slide 1 carrusel" },
-  { src: "/mapa1.jpg", alt: "Slide 2 carrusel" },
-  { src: "/city.png", alt: "Slide 3 carrusel" },
+  { src: "/carousel_photos/map1.png", alt: "Slide 1 carrusel" },
+  { src: "/carousel_photos/map2.png", alt: "Slide 2 carrusel" },
+  { src: "/carousel_photos/map3.png", alt: "Slide 3 carrusel" },
 ];
 
 const CarouselComponent = () => {

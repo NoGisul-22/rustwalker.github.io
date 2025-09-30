@@ -11,7 +11,7 @@ const HeaderComponent = () => {
           isOpen ? "max-h-[100px]" : "max-h-0"
         }`}
       >
-        <div className="header relative w-full h-[100px] bg-[var(--base-bg-color)] text-white p-4 flex items-center z-10">
+        <div className="header relative w-full h-[100px] bg-[var(--base-bg-color)] text-white p-4 flex items-center z-20">
           <nav className="w-full flex justify-between items-center px-8">
             <ul className="flex justify-between w-full pl-40 pr-40 space-x-4 text-2xl font-bold">
               <li className="nav_links">

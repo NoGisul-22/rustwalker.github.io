@@ -1,6 +1,12 @@
 import React from "react";
 
 const FooterComponent = () => {
+  // Función para manejar links que todavía no existen
+  const handleSoon = (e) => {
+    e.preventDefault(); // evita que intente navegar
+    alert("Próximamente 🚀");
+  };
+
   return (
     <footer className="w-full h-[250px] p-4 bg-[url(/fondo_light.png)] bg-no-repeat bg-cover bg-center text-white flex">
       <div className="w-[30%] flex items-center justify-start pl-10">
@@ -13,19 +19,19 @@ const FooterComponent = () => {
       <div className="w-[70%] grid grid-cols-4 gap-2 text-lg font-bold">
         <div className="footer_div">
           <p className="footer_tittle">ATTENTION</p>
-          <a href="#" className="footer_link">
+          <a href="#" onClick={handleSoon} className="footer_link">
             Report a bug
           </a>
-          <a href="#" className="footer_link">
+          <a href="#" onClick={handleSoon} className="footer_link">
             Request a feature
           </a>
-          <a href="#" className="footer_link">
+          <a href="#" onClick={handleSoon} className="footer_link">
             Contact support
           </a>
         </div>
         <div className="footer_div">
           <p className="footer_tittle">MODS</p>
-          <a href="#" className="footer_link">
+          <a href="#" onClick={handleSoon} className="footer_link">
             About mods
           </a>
         </div>
@@ -46,10 +52,13 @@ const FooterComponent = () => {
         </div>
         <div className="footer_div">
           <p className="footer_tittle">SOCIAL</p>
-          <a href="https://github.com/NoGisul-22/Juego-2D-PixelArt">
+          <a
+            target="_blank"
+            href="https://github.com/NoGisul-22/Juego-2D-PixelArt"
+          >
             <img className="footer_img" src="/github.png" alt="GitHub" />
           </a>
-          <a href="https://instagram.com/yourprofile">
+          <a target="_blank" href="https://instagram.com/yourprofile">
             <img className="footer_img" src="/ig-logo.png" alt="Instagram" />
           </a>
         </div>

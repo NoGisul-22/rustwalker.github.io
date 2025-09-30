@@ -47,13 +47,21 @@ const DownloadSection = () => {
         >
           <p className="text-gray-500">
             - Descargar para:{" "}
-            <a href="#" className="hover:text-blue-300 transition duration-200">
+            <a
+              target="_blank"
+              href="https://github.com/NoGisul-22/Juego-2D-PixelArt"
+              className="hover:text-blue-300 transition duration-200"
+            >
               windows 64 bits XMB
             </a>
           </p>
           <p className="text-gray-500">
             - Descargar para:{" "}
-            <a href="#" className="hover:text-blue-300 transition duration-200">
+            <a
+              target="_blank"
+              href="https://github.com/NoGisul-22/Juego-2D-PixelArt"
+              className="hover:text-blue-300 transition duration-200"
+            >
               windows 32 bits XMB
             </a>
           </p>

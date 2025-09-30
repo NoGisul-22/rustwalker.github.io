@@ -10,23 +10,41 @@ import DownloadSection from "../components/DownloadSection.jsx";
   <!-- Sección 1 -->
   <section
     id="home"
-    class="bg-[url(/city.png)] bg-no-repeat bg-cover bg-center bg-black/25 bg-blend-multiply text-white w-full h-screen flex flex-col p-0"
+    class="relative text-white w-full h-screen flex flex-col p-0 overflow-hidden"
   >
-    <div>
+    <!-- Video de fondo -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute top-0 left-0 w-full h-full object-cover -z-20"
+    >
+      <source src="/video/video_fondo.webm" type="video/webm" />
+      Tu navegador no soporta videos en HTML5.
+    </video>
+
+    <!-- Capa oscura encima del video (como tenías el bg-black/25) -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black/25 z-0"></div>
+
+    <!-- Logo y header -->
+    <div class="relative z-20">
       <div>
         <img
-          class="absolute w-auto h-20 top-2.5 left-2.5 z-0"
+          class="absolute w-auto h-20 top-2.5 left-2.5 z-10"
           src="/logo.png"
           alt="Logo"
         />
       </div>
       <div><HeaderComponent client:load /></div>
     </div>
+
+    <!-- Texto central -->
     <div
-      class="w-full flex flex-col justify-center items-center h-auto absolute top-1/2 -translate-y-1/2 z-0"
+      class="w-full flex flex-col justify-center items-center h-auto absolute top-1/2 -translate-y-1/2 z-10"
     >
-      <h1 class="text-7xl font-bold">NOMBRE DEL JUEGO</h1>
-      <p class="text-[18px] font-light">Descripción del juego</p>
+      <h1 class="text-7xl font-bold">RUSTWALKER</h1>
+      <p class="text-[18px] font-light">Plataformero Apocaliptico</p>
     </div>
   </section>
 
