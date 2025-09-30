@@ -34,7 +34,7 @@
 html {
   @apply scroll-smooth;
   cursor:
-    url("/cursor/pixel.png") 0 0,
+    url("../assets/cursor/pixel.png") 0 0,
     auto;
 }
 
@@ -43,7 +43,7 @@ button,
 .cursor-pointer {
   /* Cursor pointer */
   cursor:
-    url("/cursor/pixel-link.png") 0 0,
+    url("../assets/cursor/pixel-link.png") 0 0,
     pointer;
 }
 
