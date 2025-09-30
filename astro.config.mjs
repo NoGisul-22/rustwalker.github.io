@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rustwalker.github.io",
+  site: "https://nogisul-22.github.io/rustwalker.github.io/",
   vite: {
     plugins: [tailwindcss()],
   },
