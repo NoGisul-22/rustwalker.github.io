@@ -2,15 +2,16 @@ name: Deploy Astro site to GitHub Pages
 
 on:
   push:
-    branches: [main] # Se ejecuta cuando hagas push a main
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
 
     steps:
       - name: Checkout repository
