@@ -1,5 +1,10 @@
 import React from "react";
 
+// Importaciones de imágenes que NO son bg
+import logo from "../assets/icons/logo.png";
+import githubIcon from "../assets/images/github.png";
+import igLogo from "../assets/icons/ig-logo.png";
+
 const FooterComponent = () => {
   // Función para manejar links que todavía no existen
   const handleSoon = (e) => {
@@ -12,7 +17,7 @@ const FooterComponent = () => {
       <div className="w-[30%] flex items-center justify-start pl-10">
         <img
           className="h-[200px] w-auto object-contain"
-          src="/src/assets/icons/logo.png"
+          src={logo.src}
           alt="Logo"
         />
       </div>
@@ -56,18 +61,10 @@ const FooterComponent = () => {
             target="_blank"
             href="https://github.com/NoGisul-22/Juego-2D-PixelArt"
           >
-            <img
-              className="footer_img"
-              src="/src/assets/images/github.png"
-              alt="GitHub"
-            />
+            <img className="footer_img" src={githubIcon.src} alt="GitHub" />
           </a>
           <a target="_blank" href="https://instagram.com/yourprofile">
-            <img
-              className="footer_img"
-              src="/src/assets/icons/ig-logo.png"
-              alt="Instagram"
-            />
+            <img className="footer_img" src={igLogo.src} alt="Instagram" />
           </a>
         </div>
       </div>

@@ -4,6 +4,9 @@ import HeaderComponent from "../components/HeaderComponent.jsx";
 import CarouselComponent from "../components/CarouselComponent.jsx";
 import TechSection from "../components/TechSection.jsx";
 import DownloadSection from "../components/DownloadSection.jsx";
+// importación de assets
+import logo from "../assets/icons/logo.png";
+import video from "../assets/video/video_fondo.webm";
 ---
 
 <Layout>
@@ -20,7 +23,7 @@ import DownloadSection from "../components/DownloadSection.jsx";
       playsinline
       class="absolute top-0 left-0 w-full h-full object-cover -z-20"
     >
-      <source src="/src/assets/video/video_fondo.webm" type="video/webm" />
+      <source src={video} type="video/webm" />
       Tu navegador no soporta videos en HTML5.
     </video>
 
@@ -32,7 +35,7 @@ import DownloadSection from "../components/DownloadSection.jsx";
       <div>
         <img
           class="absolute w-auto h-20 top-2.5 left-2.5 z-10"
-          src="../assets/icons/logo.png"
+          src={logo.src}
           alt="Logo"
         />
       </div>

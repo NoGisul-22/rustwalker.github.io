@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Importaciones de imágenes
+import githubIcon from "../assets/icons/github.webp";
+import librespriteIcon from "../assets/icons/libresprite.webp";
+import pygameIcon from "../assets/icons/pygame.webp";
+import pythonIcon from "../assets/icons/python.webp";
+import tiledIcon from "../assets/icons/tiled.webp";
+
 const techData = {
   github: {
-    img: "/src/assets/icons/github.webp",
+    img: githubIcon.src,
     name: "GitHub",
     link: "https://github.com",
     description:
@@ -11,7 +18,7 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   libresprite: {
-    img: "/src/assets/icons/libresprite.webp",
+    img: librespriteIcon.src,
     name: "LibreSprite",
     link: "https://libresprite.github.io/",
     description:
@@ -19,7 +26,7 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   pygame: {
-    img: "/src/assets/icons/pygame.webp",
+    img: pygameIcon.src,
     name: "Pygame",
     link: "https://www.pygame.org/",
     description:
@@ -27,14 +34,14 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   python: {
-    img: "/src/assets/icons/python.webp",
+    img: pythonIcon.src,
     name: "Python",
     link: "https://www.python.org/",
     description: "Lenguaje principal del proyecto para programar el juego.",
     help: "Da clic afuera de esta pantalla para salir",
   },
   tiled: {
-    img: "/src/assets/icons/tiled.webp",
+    img: tiledIcon.src,
     name: "Tiled",
     link: "https://www.mapeditor.org/",
     description: "Editor de mapas usado para diseñar los niveles del juego.",
@@ -99,7 +106,7 @@ const TechIcons = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={closeModal} // cerrar al hacer click fuera
+            onClick={closeModal}
           >
             <motion.div
               className="bg-[#212121] text-white rounded-2xl shadow-xl p-10 flex flex-col items-center max-w-[80%] max-h-[70%] overflow-y-auto"
@@ -107,7 +114,7 @@ const TechIcons = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.7, opacity: 0 }}
               transition={{ duration: 0.4 }}
-              onClick={(e) => e.stopPropagation()} // evita cerrar al hacer click dentro
+              onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={techData[selected].img}

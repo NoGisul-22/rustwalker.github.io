@@ -2,10 +2,15 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 
+// Importaciones de imágenes
+import map1 from "../assets/images/carousel/map1.png";
+import map2 from "../assets/images/carousel/map2.png";
+import map3 from "../assets/images/carousel/map3.png";
+
 const slides = [
-  { src: "/src/assets/images/carousel/map1.png", alt: "Slide 1 carrusel" },
-  { src: "/src/assets/images/carousel/map2.png", alt: "Slide 2 carrusel" },
-  { src: "/src/assets/images/carousel/map3.png", alt: "Slide 3 carrusel" },
+  { src: map1.src, alt: "Slide 1 carrusel" },
+  { src: map2.src, alt: "Slide 2 carrusel" },
+  { src: map3.src, alt: "Slide 3 carrusel" },
 ];
 
 const CarouselComponent = () => {
