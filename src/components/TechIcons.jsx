@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const techData = {
   github: {
-    img: "/icons/github.webp",
+    img: "/src/assets/icons/github.webp",
     name: "GitHub",
     link: "https://github.com",
     description:
@@ -11,7 +11,7 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   libresprite: {
-    img: "/icons/libresprite.webp",
+    img: "/src/assets/icons/libresprite.webp",
     name: "LibreSprite",
     link: "https://libresprite.github.io/",
     description:
@@ -19,7 +19,7 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   pygame: {
-    img: "/icons/pygame.webp",
+    img: "/src/assets/icons/pygame.webp",
     name: "Pygame",
     link: "https://www.pygame.org/",
     description:
@@ -27,14 +27,14 @@ const techData = {
     help: "Da clic afuera de esta pantalla para salir",
   },
   python: {
-    img: "/icons/python.webp",
+    img: "/src/assets/icons/python.webp",
     name: "Python",
     link: "https://www.python.org/",
     description: "Lenguaje principal del proyecto para programar el juego.",
     help: "Da clic afuera de esta pantalla para salir",
   },
   tiled: {
-    img: "/icons/tiled.webp",
+    img: "/src/assets/icons/tiled.webp",
     name: "Tiled",
     link: "https://www.mapeditor.org/",
     description: "Editor de mapas usado para diseñar los niveles del juego.",

@@ -12,7 +12,7 @@ const textVariant = {
 
 const DownloadSection = () => {
   return (
-    <div className="w-full h-[75vh] bg-[url(/download_bg.png)] bg-no-repeat bg-cover bg-start flex text-white">
+    <div className="w-full h-[75vh] bg-[url(/src/assets/images/download_bg.png)] bg-no-repeat bg-cover bg-start flex text-white">
       {/* Columna izquierda */}
       <div className="flex-1 h-full flex flex-col justify-start pl-10 pr-30 pt-30 gap-10">
         <motion.h1

@@ -8,11 +8,11 @@ const FooterComponent = () => {
   };
 
   return (
-    <footer className="w-full h-[250px] p-4 bg-[url(/fondo_light.png)] bg-no-repeat bg-cover bg-center text-white flex">
+    <footer className="w-full h-[250px] p-4 bg-[url(/src/assets/images/fondo_light.png)] bg-no-repeat bg-cover bg-center text-white flex">
       <div className="w-[30%] flex items-center justify-start pl-10">
         <img
           className="h-[200px] w-auto object-contain"
-          src="/logo.png"
+          src="/src/assets/icons/logo.png"
           alt="Logo"
         />
       </div>
@@ -56,10 +56,18 @@ const FooterComponent = () => {
             target="_blank"
             href="https://github.com/NoGisul-22/Juego-2D-PixelArt"
           >
-            <img className="footer_img" src="/github.png" alt="GitHub" />
+            <img
+              className="footer_img"
+              src="/src/assets/images/github.png"
+              alt="GitHub"
+            />
           </a>
           <a target="_blank" href="https://instagram.com/yourprofile">
-            <img className="footer_img" src="/ig-logo.png" alt="Instagram" />
+            <img
+              className="footer_img"
+              src="/src/assets/icons/ig-logo.png"
+              alt="Instagram"
+            />
           </a>
         </div>
       </div>
